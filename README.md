@@ -1,35 +1,31 @@
-# ExpTODIM Robustness Dashboard
+# TODIM Family Robustness Dashboard
 
-Interactive dashboard for the paper idea:
+This package implements a computational dashboard for the TODIM family:
 
-**Exploring Ranking Robustness in ExpTODIM: Effects of Loss Aversion, Exponential Sensitivity and Normalization**
-
-## Install
-
-```bash
-pip install -r requirements.txt
-```
+1. Classical TODIM
+2. Generalized TODIM — inverse-weight loss
+3. Generalized TODIM — monotone/prospect
+4. Power TODIM
+5. Logarithmic TODIM
+6. ExpTODIM
 
 ## Run
 
 ```bash
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Contents
+## Files
 
-- `exptodim_engine.py`: ExpTODIM computational engine.
+- `todim_family_engine.py`: computational engine.
 - `app.py`: Streamlit dashboard.
-- `requirements.txt`: Python dependencies.
+- `requirements.txt`: dependencies.
+- `method_comparison_default.csv`: default comparison across methods.
+- `sensitivity_results_todim_family_default.csv`: default sensitivity grid.
 
-## Built-in example
+## Notes
 
-5 alternatives and 8 criteria:
-Hotel Rating, Time Traveling, Days, Cost, Shopping, Cultural Attractions, Nature, Safety.
+The classical and inverse-weight generalized formulations reproduce the inverse-weight loss behavior discussed in the literature. The monotone/prospect and Power TODIM formulations avoid inverse-weight losses and use gain/loss curvature parameters. Logarithmic TODIM uses logarithmic dampening controlled by rho and lambda. ExpTODIM uses an exponential saturation function controlled by rho and lambda.
 
-Baseline:
-- normalization: sum
-- loss aversion: lambda = 2.25
-- exponential sensitivity: rho = 3
-
-The baseline ranking is: A1 > A2 > A3 > A4 > A5.
+The revised package uses inverse-ratio max normalization for cost criteria, i.e. min(x_j)/x_ij, to avoid assuming that zero is always the ideal cost value.
