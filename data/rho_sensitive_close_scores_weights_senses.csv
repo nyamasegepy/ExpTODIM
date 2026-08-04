@@ -1,0 +1,5 @@
+Criterion,Weight,Sense
+Performance,0.3,1
+Cost,0.25,0
+Stability,0.25,1
+ImplementationTime,0.2,0

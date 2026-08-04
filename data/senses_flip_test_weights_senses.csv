@@ -1,0 +1,5 @@
+Criterion,Weight,Sense
+Price,0.3,0
+Durability,0.25,1
+MaintenanceCost,0.25,0
+UserScore,0.2,1

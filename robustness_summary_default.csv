@@ -1,0 +1,6 @@
+method,scenarios,top_one_stability,full_ranking_stability,mean_spearman,min_spearman,mean_kendall,changed_rankings
+classical_todim,20,1.0,0.0,0.7,0.7,0.6,20
+generalized_inverse,180,1.0,0.0,0.7,0.7,0.6,180
+generalized_monotone,180,1.0,0.7388888888888889,0.9738888888888889,0.9,0.9477777777777777,47
+log_todim,100,1.0,0.95,0.995,0.9,0.99,5
+exptodim,100,1.0,0.88,0.988,0.9,0.976,12

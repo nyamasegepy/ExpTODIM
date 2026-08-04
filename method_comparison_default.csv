@@ -2,6 +2,5 @@ method,top_alternative,ranking,spearman_vs_reference,kendall_tau_vs_reference
 classical_todim,A1,A1 > A3 > A4 > A2 > A5,0.7,0.6
 generalized_inverse,A1,A1 > A3 > A4 > A2 > A5,0.7,0.6
 generalized_monotone,A1,A1 > A2 > A4 > A3 > A5,0.9,0.8
-power_todim,A1,A1 > A2 > A4 > A3 > A5,0.9,0.8
 log_todim,A1,A1 > A2 > A3 > A4 > A5,1.0,1.0
 exptodim,A1,A1 > A2 > A3 > A4 > A5,1.0,1.0
